@@ -1,0 +1,23 @@
+	<table>
+		<thead>
+			<tr>
+				<th>Sl.no</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Subject</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% count = 1 %>
+			<%  @contacts.each do |contact| %>
+			<tr>
+				<td><%= count %></td>
+				<td>contact.name</td>
+				<td>contact.email</td>
+				<td>contact.subject</td>
+				<td>contact.description</td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
